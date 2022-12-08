@@ -1,4 +1,4 @@
-import Image from "../img/shajadul.jpg";
+import Image from "../../img/shajadul.jpg";
 import styles from "./About.module.css";
 const About = () => {
   return (
