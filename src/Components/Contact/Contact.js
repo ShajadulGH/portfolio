@@ -2,11 +2,11 @@ import styles from "./Contact.module.css";
 import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 const Contact = () => {
   const form = useRef();
-
+  const [isEmailSent, setIsEmailSent] = useState(false);
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -19,6 +19,8 @@ const Contact = () => {
       )
       .then(
         (result) => {
+          setIsEmailSent(true);
+          e.target.reset();
           console.log(result.text);
         },
         (error) => {
@@ -58,6 +60,7 @@ const Contact = () => {
             <input type="text" placeholder="Email" name="user_email" />
             <textarea rows="5" placeholder="Message" name="message" />
             <button>Submit</button>
+            {isEmailSent && "Thank You..."}
           </form>
         </div>
       </div>
