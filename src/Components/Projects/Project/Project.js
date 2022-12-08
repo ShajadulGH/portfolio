@@ -1,6 +1,8 @@
 import styles from "./Project.module.css";
 
 const Product = ({ img, link }) => {
+  console.log(img);
+
   return (
     <div className={styles.p}>
       <div className={styles.p_brow}>
