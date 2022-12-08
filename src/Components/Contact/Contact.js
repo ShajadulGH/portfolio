@@ -2,7 +2,30 @@ import styles from "./Contact.module.css";
 import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_58pb02s",
+        "template_jngsnqp",
+        form.current,
+        "c84s4728u0cs9a9PO"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <div className={styles.c}>
       <div className={styles.c_bg}></div>
@@ -29,7 +52,7 @@ const Contact = () => {
             <b>Please do not hesitate to contact me.</b> If you require any
             further information, feel free to contact me
           </p>
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
             <input type="text" placeholder="Name" name="user_name" />
             <input type="text" placeholder="Subject" name="user_subject" />
             <input type="text" placeholder="Email" name="user_email" />
