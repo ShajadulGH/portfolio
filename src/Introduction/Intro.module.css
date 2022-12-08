@@ -67,16 +67,19 @@
     flex-direction: column;
   }
   .introLeft {
-    padding: 10px;
+    /* padding: 10px; */
     align-items: center;
     justify-content: center;
     text-align: center;
     height: 100%;
   }
-  .box1_discription {
+  /* .box1_discription {
     display: none;
-  }
+  } */
   .box1_title_item {
     justify-content: center;
+  }
+  .introRight {
+    display: none;
   }
 }

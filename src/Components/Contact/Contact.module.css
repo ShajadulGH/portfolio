@@ -115,4 +115,7 @@ button {
   button {
     margin-bottom: 10px;
   }
+  .c_bg {
+    display: none;
+  }
 }
