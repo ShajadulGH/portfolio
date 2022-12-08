@@ -43,3 +43,26 @@
 .about_desc {
   font-weight: 300;
 }
+@media screen and (max-width: 480px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .about_left {
+    width: 100%;
+  }
+
+  .about_box1 {
+    height: 40vh;
+  }
+
+  .about_box1.bg {
+    display: none;
+  }
+
+  .about_right {
+    padding: 20px;
+  }
+}

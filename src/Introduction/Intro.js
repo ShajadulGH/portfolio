@@ -5,8 +5,8 @@ const Intro = () => {
     <div className={styles.intro}>
       <div className={styles.introLeft}>
         <div className={styles.box1}>
-          <h2 className={styles.box1_intro}>Hello, Working on this</h2>
-          <h2 className={styles.box1_name}>Project</h2>
+          <h2 className={styles.box1_intro}>Hello, My name is</h2>
+          <h2 className={styles.box1_name}>Shajadul Karim</h2>
           <div className={styles.box1_title}>
             <div className={styles.box1_title_wrapper}>
               <div className={styles.box1_title_item}>Software Engineer</div>
