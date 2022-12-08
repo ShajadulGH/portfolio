@@ -10,9 +10,9 @@ const Intro = () => {
           <div className={styles.box1_title}>
             <div className={styles.box1_title_wrapper}>
               <div className={styles.box1_title_item}>Software Engineer</div>
+              <div className={styles.box1_title_item}>Front-End Developer</div>
+              <div className={styles.box1_title_item}>MERN Stack</div>
               <div className={styles.box1_title_item}>Web Developer</div>
-              <div className={styles.box1_title_item}>Fron-End Developer</div>
-              <div className={styles.box1_title_item}>JavaScript Developer</div>
             </div>
           </div>
           <div className={styles.box1_discription}>
