@@ -1,0 +1,45 @@
+.about {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.about_left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+}
+.about_right {
+  flex: 1;
+}
+.about_image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.about_box1 {
+  width: 60%;
+  height: 70vh;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.bg {
+  background-color: rgb(255, 78, 78);
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.about_title {
+  font-weight: 400;
+}
+
+.about_sub {
+  margin: 20px 0px;
+}
+
+.about_desc {
+  font-weight: 300;
+}
