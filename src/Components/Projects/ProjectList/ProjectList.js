@@ -13,7 +13,12 @@ const ProductList = () => {
       </div>
       <div className={styles.pl_list}>
         {projects.map((item) => (
-          <Project key={item.id} img={item.img} link={item.link} />
+          <Project
+            key={item.id}
+            img={item.img}
+            link={item.link}
+            title={item.title}
+          />
         ))}
       </div>
     </div>

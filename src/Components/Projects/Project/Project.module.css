@@ -8,20 +8,34 @@
 }
 
 .p_brow {
-  height: 20px;
-  background-color: rgb(243, 242, 242);
+  height: 30px;
+  background-color: rgb(214, 213, 213);
   display: flex;
   align-items: center;
   position: sticky;
   z-index: 2;
 }
 
-.p_circle {
-  width: 6px;
-  height: 6px;
+.p_circle1 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 5px;
+  background-color: rgb(255, 0, 0);
+}
+.p_circle2 {
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   margin: 3px;
-  background-color: white;
+  background-color: rgb(255, 251, 0);
+}
+.p_circle3 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 3px;
+  background-color: rgb(9, 255, 0);
 }
 
 .p_img {
@@ -32,10 +46,16 @@
 .p:hover .p_img {
   transform: translateY(-100%);
 }
-
+.project {
+  font-weight: bold;
+  margin-left: 5px;
+}
 @media screen and (max-width: 480px) {
   .p {
     width: 40%;
     height: 20vh;
+  }
+  .project {
+    font-size: 10px;
   }
 }
