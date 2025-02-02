@@ -20,17 +20,17 @@ export const projects = [
   },
   {
     id: 3,
+    img: Image1,
+    link: "https://house-of-burger.vercel.app/",
+    title: "Food Order App",
+  },
+  {
+    id: 4,
     img: Image6,
     link: "https://quotes-app-shajadul.vercel.app/qoutes",
     title: "Qoutes App",
   },
 
-  {
-    id: 4,
-    img: Image1,
-    link: "https://house-of-burger.vercel.app/",
-    title: "Food Order App",
-  },
   {
     id: 5,
     img: Image2,
